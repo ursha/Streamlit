@@ -12,7 +12,7 @@ apps = {
     "heatmap": {"title": "Heatmap", "icon": "map"},
     "upload": {"title": "Upload", "icon": "cloud-upload"},
     "vector": {"title": "vector", "icon": "bounding-box"},
-    "kepler.gl": {"title": "kepler.gl", "icon": "bounding-box"},
+    "keplergl": {"title": "keplergl", "icon": "bounding-box"},
     
 }
 

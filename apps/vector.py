@@ -8,6 +8,6 @@ def app():
 
     m = leafmap.Map(center=[0, 0], zoom=2)
 
-    in_geojson = 'https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/cable-geo.geojson'
+    in_geojson = '/home/ursha/Documents/streamlit/Hex_GlocationFull_UK.geojson'
     m.add_geojson(in_geojson, layer_name="Cable lines")
     m.to_streamlit(height=700)

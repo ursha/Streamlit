@@ -1,17 +1,22 @@
-import pandas as pd 
+
+import streamlit as st
+import leafmap.kepler as leafmap
 import geopandas as gpd
-import keplergl
+
 
 def app():
 
-    st.title("Kepler.gl")
+    st.title("keplergl")
 
-    Kmap = keplergl.KeplerGl(height=600)
+    m = leafmap.Map(center=[50, -2], zoom=5)
+    gdf = gpd.read_file('/home/ursha/Documents/kepler.gl/Hex_GlocationFull_UK.geojson')
+    m.add_gdf(gdf, layer_name="Countries")
+    m.to_streamlit(height=700)
+
+
+
+    
     # read geojson
-    df = gpd.read_file('https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/cable-geo.geojson')
-
-    in_geojson = 'https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/cable-geo.geojson'
-    Kmap.add_data(data=df, name='HEX')
-    #Plot Kmap
-    Kmap
-    Kmap.to_streamlit(height=700)
+    #df = gpd.read_file('/home/ursha/Documents/kepler.gl\Hex_GlocationFull_UK.geojson')
+    
+   
