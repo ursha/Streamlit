@@ -11,7 +11,8 @@ def app():
     m = leafmap.Map(center=[50, -2], zoom=5)
     gdf = gpd.read_file("https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/world_cities.geojson")
 
-    m.add_gdf(gdf, layer_name="Countries")
+    m.add_gdf(gdf, layer_name="Cities")
+    
     m.to_streamlit(height=700)
 
 
