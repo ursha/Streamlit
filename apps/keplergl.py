@@ -1,24 +1,21 @@
 
 import streamlit as st
 import leafmap.kepler as leafmap
-import geopandas as gpd
+
 
 
 def app():
 
     st.title("keplergl")
 
-    m = leafmap.Map(center=[50, -2], zoom=5)
-    gdf = gpd.read_file("https://raw.githubusercontent.com/giswqs/leafmap/master/examples/data/world_cities.geojson")
+    m = leafmap.Map(center=[54, -2], zoom=4)
+    #gdf = gpd.read_file("/home/ursha/Documents/streamlit/apps/UK_Hex.geojson")
+    in_geojson = "https://raw.githubusercontent.com/ursha/streamlit/master/UK_HEX.geojson"
+    m.add_geojson(in_geojson, layer_name="Uk HEX")
 
-    m.add_gdf(gdf, layer_name="Cities")
-    
+
+
     m.to_streamlit(height=700)
 
 
-
-    
-    # read geojson
-    #df = gpd.read_file('/home/ursha/Documents/kepler.gl\Hex_GlocationFull_UK.geojson')
-    
    
