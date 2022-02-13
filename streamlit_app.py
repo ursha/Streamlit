@@ -9,9 +9,9 @@ st.set_page_config(page_title="Streamlit Geospatial", layout="wide")
 
 apps = {
     "home": {"title": "Home", "icon": "house"},
-    "heatmap": {"title": "Heatmap", "icon": "map"},
-    "upload": {"title": "Upload", "icon": "cloud-upload"},
-    "vector": {"title": "vector", "icon": "bounding-box"},
+    # "heatmap": {"title": "Heatmap", "icon": "map"},
+    # "upload": {"title": "Upload", "icon": "cloud-upload"},
+    # "vector": {"title": "vector", "icon": "bounding-box"},
     "keplergl": {"title": "keplergl", "icon": "bounding-box"},
     
 }
