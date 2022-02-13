@@ -39,7 +39,7 @@ with st.sidebar:
     st.sidebar.info(
         """
         This web [app](https://share.streamlit.io/giswqs/streamlit-template) is created from template that is maintained by [Qiusheng Wu](https://wetlands.io).
-            [GitHub](https://github.com/giswqs) || [YouTube](https://www.youtube.com/c/QiushengWu) |
+            [GitHub](https://github.com/giswqs)
         
         Source code: <https://github.com/giswqs/streamlit-template>
 
