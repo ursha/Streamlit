@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from apps import home, heatmap, upload, vector,keplergl # import your app modules here
+from apps import home, heatmap, upload, vector,keplergl, Sentinel1 # import your app modules here
 
 st.set_page_config(page_title="Streamlit Geospatial", layout="wide")
 
@@ -13,6 +13,7 @@ apps = {
     # "upload": {"title": "Upload", "icon": "cloud-upload"},
     # "vector": {"title": "vector", "icon": "bounding-box"},
     "keplergl": {"title": "keplergl", "icon": "bounding-box"},
+    "Sentinel1": {"title": "Sentinel 1", "icon": "map"},
     
 }
 
