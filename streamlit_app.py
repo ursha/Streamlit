@@ -1,6 +1,7 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
-from apps import home, heatmap, upload, vector,keplergl, Sentinel1 # import your app modules here
+from apps import home, heatmap, upload, vector,keplergl, Sentinel1, Sentinel1_uk # import your app modules here
+import datetime
 
 st.set_page_config(page_title="Streamlit Geospatial", layout="wide")
 
@@ -14,6 +15,7 @@ apps = {
     # "vector": {"title": "vector", "icon": "bounding-box"},
     "keplergl": {"title": "keplergl", "icon": "bounding-box"},
     "Sentinel1": {"title": "Sentinel 1", "icon": "map"},
+    "Sentinel1_uk": {"title": "Sentinel 1 UK ", "icon": "map"},
     
 }
 
@@ -35,7 +37,8 @@ with st.sidebar:
         menu_icon="cast",
         default_index=default_index,
     )
-
+    
+    
     st.sidebar.title("About")
     st.sidebar.info(
         """
